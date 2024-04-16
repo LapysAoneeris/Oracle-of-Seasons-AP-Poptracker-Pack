@@ -7,7 +7,7 @@
 		"children": [
 			{
 				"name": "Maku Tree",
-				"access_rules": ["sword1"],
+				"access_rules": ["sword"],
 				"sections": [
 					{
 					"name": "Horon Village: Maku Tree Gift"
@@ -205,19 +205,22 @@
 				"name": "Hero's Cave",
 				"sections": [
 					{
-					"name": "Hero's Cave: Topmost Chest"
+					"name": "Hero's Cave: Topmost Chest",
+					"access_rules": ["$d0"]
 					},
 					{
 					"name": "Hero's Cave: Item in Basement Under Keese Room",
-					"access_rules": ["$kill_keese"]
+					"access_rules": ["$kill_keese, $d0"]
 					},
 					{
 					"name": "Hero's Cave: Final Chest",
-					"access_rules": ["d0sk:1"]
+					"access_rules": ["d0sk:1, $d0",
+						"d0_master_key, $d0"]
 					},
 					{
 					"name": "Hero's Cave: Alternative Entrance Chest",
-					"access_rules": ["$destroy_bush_flute"]
+					"access_rules": ["$destroy_bush_flute, d2_alt_entrance_vanilla",
+						"d2_alt_entrance_removed, $d0"]
 					}
 				],
 				"map_locations": [
@@ -413,7 +416,7 @@
 					"name": "Eyeglass Lake: Chest in Dried Lake West Cave",
 					"access_rules": ["bombs, flippers, $max_jump:1",
 						"bombs, flippers, $moosh",
-						"bombs, flippers, $ricky"]
+						"flippers, $ricky"]
 					}
 				],
 				"map_locations": [
@@ -485,7 +488,8 @@
 			},
 			{
 				"name": "Top of D2",
-				"access_rules": ["$mystery_tree, $destroy_bush_flute"],
+				"access_rules": ["$mystery_tree, $destroy_bush_flute",
+					"$exit_d2_b"],
 				"sections": [
 					{
 					"name": "Woods of Winter: Chest on D2 Roof",
@@ -507,9 +511,9 @@
 					{
 					"name": "Woods of Winter: Chest in Autumn Cave Near D2",
 					"access_rules": ["wow_fall, magnet",
-						"wow_fall, $jump3",
+						"wow_fall, $jump4",
 						"fall, magnet",
-						"fall, $jump3"]
+						"fall, $jump4"]
 					}
 				],
 				"map_locations": [
@@ -527,8 +531,7 @@
 					{
 					"name": "Golden Moblin",
 					"access_rules": ["wow_fall, $kill_normal",
-						"fall, $ricky, $kill_normal",
-						"fall, wow_summer, $kill_normal"],
+						"fall, $kill_normal"],
 						"hosted_item": "golden_moblin"
 					}
 				],
@@ -620,7 +623,9 @@
 			},
 			{
 				"name": "Blaino's Gym",
-				"access_rules": ["$scent_tree"],
+				"access_rules": ["$scent_tree",
+					"$remains_exit, $jump3",
+					"$d8_exit, $jump3"],
 				"sections": [
 					{
 					"name": "North Horon: Blaino's Gym Prize"
@@ -636,7 +641,9 @@
 			},
 			{
 				"name": "Cave Behind Mushrooms",
-				"access_rules": ["$scent_tree"],
+				"access_rules": ["$scent_tree",
+					"$remains_exit, $jump3",
+					"$d8_exit, $jump3"],
 				"sections": [
 					{
 					"name": "Holodrum Plain: Chest in Flooded Cave Behind Mushrooms",
@@ -654,10 +661,13 @@
 			},
 			{
 				"name": "Underwater Item Below Natzu Bridge",
+				"access_rules": ["$scent_tree",
+					"$remains_exit, $jump3",
+					"$d8_exit, $jump3"],
 				"sections": [
 					{
 					"name": "Holodrum Plain: Underwater Item Below Natzu Bridge",
-					"access_rules": ["$scent_tree, flippers"]
+					"access_rules": ["flippers"]
 					}
 				],
 				"map_locations": [
@@ -671,6 +681,8 @@
 			{
 				"name": "Old Man in Treehouse",
 				"access_rules": ["flippers, $destroy_bush_flute",
+					"flippers, $remains_exit, $jump3",
+					"flippers, $d8_exit, $jump3",
 					"$dimitri"],
 				"sections": [
 					{
@@ -696,7 +708,9 @@
 			},
 			{
 				"name": "Flooded Cave",
-				"access_rules": ["$scent_tree"],
+				"access_rules": ["$plain_stump",
+					"$remains_exit, $jump3",
+					"$d8_exit, $jump3"],
 				"sections": [
 					{
 					"name": "Holodrum Plain: Chest in Flooded Cave South of Mrs. Ruul",
@@ -713,7 +727,9 @@
 			},
 			{
 				"name": "Mrs. Ruul's House",
-				"access_rules": ["$plain_stump"],
+				"access_rules": ["$plain_stump",
+					"$remains_exit, $jump3",
+					"$d8_exit, $jump3"],
 				"sections": [
 					{
 					"name": "Holodrum Plain: Mrs. Ruul Trade",
@@ -730,10 +746,21 @@
 			},
 			{
 				"name": "Floodgate Keeper",
+				"access_rules": ["$pegasus_tree",
+					"$remains_exit, $jump4",
+					"$d8_exit, $jump4",
+					"$remains_exit, $jump3, plain_summer",
+					"$d8_exit, $jump3, plain_summer",
+					"$remains_exit, $jump3, summer",
+					"$d8_exit, $jump3, summer",
+					"$remains_exit, $jump3, $ricky",
+					"$d8_exit, $jump3, $ricky",
+					"$remains_exit, $jump3, $moosh",
+					"$d8_exit, $jump3, $moosh"],
 				"sections": [
 					{
 					"name": "Spool Swamp: Item in Floodgate Keeper's House",
-					"access_rules": ["$pegasus_tree, $hit_lever"]
+					"access_rules": ["$hit_lever"]
 					}
 				],
 				"map_locations": [
@@ -746,10 +773,17 @@
 			},
 			{
 				"name": "Spool Swamp Digging Spot",
+				"access_rules": ["$pegasus_tree",
+					"$remains_exit, $jump4",
+					"$d8_exit, $jump4",
+					"$remains_exit, $jump3, $ricky",
+					"$d8_exit, $jump3, $ricky",
+					"$remains_exit, $jump3, $moosh",
+					"$d8_exit, $jump3, $moosh"],
 				"sections": [
 					{
 					"name": "Spool Swamp: Digging Spot Near Vasu's Sign",
-					"access_rules": ["$pegasus_tree, swamp_summer, shovel",
+					"access_rules": ["swamp_summer, shovel",
 						"$swamp_stump, summer, shovel"]
 					}
 				],
@@ -763,14 +797,25 @@
 			},
 			{
 				"name": "Spool Swamp Heart Piece",
+				"access_rules": ["$pegasus_tree",
+					"$remains_exit, $jump4",
+					"$d8_exit, $jump4",
+					"$remains_exit, $jump3, plain_summer",
+					"$d8_exit, $jump3, plain_summer",
+					"$remains_exit, $jump3, summer",
+					"$d8_exit, $jump3, summer",
+					"$remains_exit, $jump3, $ricky",
+					"$d8_exit, $jump3, $ricky",
+					"$remains_exit, $jump3, $moosh",
+					"$d8_exit, $jump3, $moosh"],
 				"sections": [
 					{
 					"name": "Spool Swamp: Item Amidst Currents in Spring",
 					"access_rules": ["$swamp_stump, flippers, spring",
 						"$swamp_stump, $dimitri, spring",
-						"flippers, swamp_spring",
+						"$destroy_bush_flute, flippers, swamp_spring",
 						"$dimitri, swamp_spring",
-						"$swamp_portal_exit, bracelet, swamp_spring, $jump_liquid4"]
+						"$swamp_exit, bracelet, swamp_spring, $jump_liquid4"]
 					}
 				],
 				"map_locations": [
@@ -783,7 +828,17 @@
 			},
 			{
 				"name": "Winter Cave",
-				"access_rules": ["$south_swamp"],
+				"access_rules": ["$south_swamp",
+					"$remains_exit, $jump4",
+					"$d8_exit, $jump4",
+					"$remains_exit, $jump3, plain_summer",
+					"$d8_exit, $jump3, plain_summer",
+					"$remains_exit, $jump3, summer",
+					"$d8_exit, $jump3, summer",
+					"$remains_exit, $jump3, $ricky",
+					"$d8_exit, $jump3, $ricky",
+					"$remains_exit, $jump3, $moosh",
+					"$d8_exit, $jump3, $moosh"],
 				"sections": [
 					{
 					"name": "Spool Swamp: Chest in Winter Cave",
@@ -825,7 +880,11 @@
 				"name": "North Natzu",
 				"access_rules": ["$scent_tree, flippers",
 					"$scent_tree, $dimitri",
-					"$sunken_city, natzu_dimitri, $jump_liquid4"],
+					"$gale_tree, natzu_dimitri, $jump_liquid4",
+					"$remains_exit, $jump3, flippers",
+					"$remains_exit, $jump3, $dimitri",
+					"$d8_exit, $jump3, flippers",
+					"$d8_exit, $jump3, $dimitri"],
 				"sections": [
 					{
 					"name": "Natzu Region: Chest in Northern Cave"
@@ -845,7 +904,8 @@
 					{
 					"name": "Natzu: Chest after Moblin Keep",
 					"access_rules": ["$scent_tree, $natzu_to_moblin, bracelet",
-						"$sunken_city, $sunken_to_moblin, bracelet"]
+						"$suburbs_stump_north, suburbs_spring, $sunken_to_moblin, bracelet",
+						"$suburbs_stump_north, spring, $sunken_to_moblin, bracelet"]
 					}
 				],
 				"map_locations": [
@@ -858,7 +918,8 @@
 			},
 			{
 				"name": "Ingo's House",
-				"access_rules": ["$gale_tree"],
+				"access_rules": ["$gale_tree",
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Ingo Trade",
@@ -875,7 +936,12 @@
 			},
 			{
 				"name": "Syrup's House",
-				"access_rules": ["$gale_tree, winter, bombs", "$gale_tree, winter, flippers", "$gale_tree, sunken_winter"],
+				"access_rules": ["$gale_tree, winter, bombs",
+					"$gale_tree, winter, flippers",
+					"$gale_tree, sunken_winter",
+					"$remains_portals_to_city, winter, bombs",
+					"$remains_portals_to_city, winter, flippers",
+					"$remains_portals_to_city, sunken_winter"],
 				"sections": [
 					{
 					"name": "Sunken City: Syrup Trade",
@@ -904,7 +970,8 @@
 			},
 			{
 				"name": "Waterfall Challenge",
-				"access_rules": ["$gale_tree"],
+				"access_rules": ["$gale_tree",
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Master Diver's Challenge Chest",
@@ -922,7 +989,8 @@
 			},
 			{
 				"name": "Waterfall",
-				"access_rules": ["$gale_tree"],
+				"access_rules": ["$gale_tree",
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Master's Plaque Trade",
@@ -943,12 +1011,13 @@
 			},
 			{
 				"name": "Sunken City Cliffs",
-				"access_rules": ["$gale_tree, $destroy_bush"],
+				"access_rules": ["$gale_tree",
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Chest in Summer Cave",
-					"access_rules": ["flippers, sunken_summer",
-						"flippers, summer"]
+					"access_rules": ["flippers, sunken_summer, $destroy_bush",
+						"flippers, summer, $destroy_bush"]
 					}
 				],
 				"map_locations": [
@@ -961,13 +1030,15 @@
 			},
 			{
 				"name": "Mt. Cucco Peak",
-				"access_rules": ["$mount_cucco_spring, bracelet, $max_jump:1, $harvest_cucco_tree"],
+				"access_rules": ["$mount_cucco_stump",
+					"$remains_portals_to_cucco"],
 				"sections": [
 					{
 					"name": "Mt. Cucco: Spring Banana Tree",
-					"access_rules": ["$destroy_flower",
-						"banana",
-						"$moosh"]
+					"access_rules": ["spring, bracelet, $max_jump:1, $harvest_cucco_tree, $destroy_flower",
+						"sunken_spring, bracelet, $max_jump:1, $harvest_cucco_tree, banana",
+						"spring, bracelet, $max_jump:1, $harvest_cucco_tree, $destroy_flower",
+						"sunken_spring, bracelet, $max_jump:1, $harvest_cucco_tree, banana"]
 					}
 				],
 				"map_locations": [
@@ -980,10 +1051,13 @@
 			},
 			{
 				"name": "Mt. Cucco Cave",
+				"access_rules": ["$mount_cucco_stump",
+					"$remains_portals_to_cucco"],
 				"sections": [
 					{
 					"name": "Mt. Cucco: Moving Platform Cave",
-					"access_rules": ["$mount_cucco_spring, bracelet"]
+					"access_rules": ["bracelet, sunken_spring",
+						"bracelet, spring"]
 					}
 				],
 				"map_locations": [
@@ -996,15 +1070,18 @@
 			},
 			{
 				"name": "Talon's Cave",
-				"access_rules": ["$mount_cucco_spring"],
+				"access_rules": ["$mount_cucco_stump",
+					"$remains_portals_to_cucco"],
 				"sections": [
 					{
 					"name": "Mt. Cucco: Talon Trade",
-					"access_rules": ["megaphone"]
+					"access_rules": ["megaphone, spring",
+						"megaphone, sunken_spring"]
 					},
 					{
 					"name": "Mt. Cucco: Chest Behind Talon",
-					"access_rules": ["megaphone"]
+					"access_rules": ["megaphone, spring",
+						"megaphone, sunken_spring"]
 					}
 				],
 				"map_locations": [
@@ -1017,11 +1094,13 @@
 			},
 			{
 				"name": "Diving Spot Outside D4",
-				"access_rules": ["$mount_cucco_spring"],
+				"access_rules": ["$mount_cucco_stump",
+					"$remains_portals_to_cucco"],
 				"sections": [
 					{
 					"name": "Mt. Cucco: Diving Spot Outside D4",
-					"access_rules": ["flippers"]
+					"access_rules": ["flippers, sunken_spring",
+						"flippers, spring"]
 					}
 				],
 				"map_locations": [
@@ -1034,10 +1113,13 @@
 			},
 			{
 				"name": "Mt. Cucco Heart Piece",
-				"access_rules": ["{$mount_cucco_stump}", "$mount_cucco_spring"],
+				"access_rules": ["$mount_cucco_stump",
+					"$remains_portals_to_cucco"],
 				"sections": [
 					{
-					"name": "Mt. Cucco: Item on Ledge"
+					"name": "Mt. Cucco: Item on Ledge",
+					"access_rules": ["sunken_spring",
+						"spring"]
 					}
 				],
 				"map_locations": [
@@ -1050,12 +1132,13 @@
 			},
 			{
 				"name": "East Goron Mountain",
+				"access_rules": ["$mount_cucco_stump",
+					"$remains_portals_to_cucco"],
 				"sections": [
 					{
 					"name": "Goron Mountain: Item Across Pits",
-					"access_rules": ["{$mount_cucco_stump}",
-						"$mount_cucco_stump, banana",
-						"$mount_cucco_stump, $jump4"]
+					"access_rules": ["banana",
+					"$jump5"]
 					}
 				],
 				"map_locations": [
@@ -1074,7 +1157,8 @@
 					"access_rules": ["$goron_mountain, bombs, bracelet",
 						"$mount_cucco_stump, bombs, shovel",
 						"$mount_cucco_stump, bombs, banana",
-						"$mount_cucco_stump, bombs, $moosh"]
+						"$remains_portals_to_goron, bombs, bracelet"
+						]
 					}
 				],
 				"map_locations": [
@@ -1087,7 +1171,8 @@
 			},
 			{
 				"name": "Goron Caves",
-				"access_rules": ["$goron_mountain"],
+				"access_rules": ["$goron_mountain",
+					"$remains_portals_to_goron"],
 				"sections": [
 					{
 					"name": "Goron Mountain: Chest Across Lava",
@@ -1104,7 +1189,8 @@
 			},
 			{
 				"name": "Biggoron Trade",
-				"access_rules": ["$goron_mountain"],
+				"access_rules": ["$goron_mountain",
+					"$remains_portals_to_goron"],
 				"sections": [
 					{
 					"name": "Goron Mountain: Biggoron Trade",
@@ -1123,7 +1209,7 @@
 				"name": "Golden Lynel - Winter",
 				"chest_unopened_img": "images/items/golden_lynel.png",
 				"chest_opened_img": "images/items/golden_lynel_defeated.png",
-				"access_rules": ["$tarm_ruins"],
+				"access_rules": ["$tarm_lynel"],
 				"sections": [
 					{
 					"name": "Lost Woods",
@@ -1145,7 +1231,8 @@
 				"access_rules": ["$tarm_tree"],
 				"sections": [
 					{
-					"name": "Lost Woods: Pedestal Item"
+					"name": "Lost Woods: Pedestal Item",
+					"access_rules": ["phonograph"]
 					}
 					
 				],
@@ -1214,7 +1301,9 @@
 				"sections": [
 					{
 					"name": "Temple Remains: Item in Cave Behind Rockslide",
-					"access_rules": ["$destroyed_remains, $jump_liquid2"]
+					"access_rules": ["$destroyed_remains, $jump_liquid2, $portal_remains_enter",
+						"$destroyed_remains, $jump_liquid2, $d8_exit",
+						"$destroyed_remains, $jump_liquid2, $remains_exit"]
 					}
 					
 				],
@@ -1287,7 +1376,9 @@
 			},
 			{
 				"name": "Holodrum Plain tree",
-				"access_rules": ["$scent_tree"],
+				"access_rules": ["$scent_tree",
+					"$d8_exit, $jump3",
+					"$remains_exit, $jump3"],
 				"sections": [
 				  	{
 						"name": "Holodrum Plain: Seed Tree",
@@ -1325,7 +1416,17 @@
 			},
 			{
 				"name": "Spool Swamp tree",
-				"access_rules": ["$pegasus_tree"],
+				"access_rules": ["$pegasus_tree",
+					"$remains_exit, $jump4",
+					"$d8_exit, $jump4",
+					"$remains_exit, $jump3, plain_summer",
+					"$d8_exit, $jump3, plain_summer",
+					"$remains_exit, $jump3, summer",
+					"$d8_exit, $jump3, summer",
+					"$remains_exit, $jump3, $ricky",
+					"$d8_exit, $jump3, $ricky",
+					"$remains_exit, $jump3, $moosh",
+					"$d8_exit, $jump3, $moosh"],
 				"sections": [
 					{
 						"name": "Spool Swamp: Seed Tree",
@@ -1344,7 +1445,8 @@
 			},
 			{
 				"name": "Sunken City tree",
-				"access_rules": ["$gale_tree"],
+				"access_rules": ["$gale_tree",
+					"$remains_portals_to_city"],
 				"sections": [
 				  {
 						"name": "Sunken City: Seed Tree",
@@ -1382,7 +1484,8 @@
 			{
 				"name": "Goron Mountain Old Man",
 				"visibility_rules": ["old_men_locations"],
-				"access_rules": ["$goron_mountain"],
+				"access_rules": ["$goron_mountain",
+					"$remains_portals_to_goron"],
 				"sections": [
 				  	{
 					"name": "Goron Mountain: Old Man",
@@ -1400,7 +1503,10 @@
 			{
 				"name": "Old Man Near Blaino's Gym",
 				"visibility_rules": ["old_men_locations"],
-				"access_rules": ["$scent_tree"],
+				"access_rules": ["$scent_tree, plain_summer",
+					"$scent_tree, summer",
+					"$remains_exit, $jump3",
+					"$d8_exit, $jump3"],
 				"sections": [
 				  	{
 					"name": "Holodrum Plain: Old Man Near Blaino's Gym",
@@ -1507,7 +1613,9 @@
 			{
 				"name": "Old Man Near Mrs. Ruul's House",
 				"visibility_rules": ["old_men_locations"],
-				"access_rules": ["$plain_stump"],
+				"access_rules": ["$plain_stump",
+					"$remains_exit, $jump3",
+					"$d8_exit, $jump3"],
 				"sections": [
 				  	{
 					"name": "Holodrum Plain: Old Man Near Mrs. Ruul's House",
