@@ -1333,27 +1333,44 @@ ScriptHost:AddWatchForCode("seasons settings handler", "default_seasons", season
 ScriptHost:AddWatchForCode("seasons handler", "fill_seasons", display_seasons)
 ScriptHost:AddWatchForCode("portal settings handler", "portalshuffle", vanilla_portals)
 ScriptHost:AddWatchForCode("portal handler", "fill_portals", display_portals)
+
+
 -- DUNGEON CHECK RULES --
 
 function entrance_not_assigned(prefix)
-	return not(has(prefix .. "_d1") or has(prefix .. "_d2") or has(prefix .. "_d3") or has(prefix .. "_d4") or has(prefix .. "_d5") or has(prefix .. "_d6") or has(prefix .. "_d7") or has(prefix .. "_d8"))
+	return not(has(prefix .. "_d0") or has(prefix .. "_d1") or has(prefix .. "_d2") or has(prefix .. "_d3") or has(prefix .. "_d4") or has(prefix .. "_d5") or has(prefix .. "_d6") or has(prefix .. "_d7") or has(prefix .. "_d8"))
 end
 
 function dungeon_not_assigned(suffix)
-	return not(has("d1_" .. suffix) or has("d2_" .. suffix) or has("d3_" .. suffix) or has("d4_" .. suffix) or has("d5_" .. suffix) or has("d6_" .. suffix) or has("d7_" .. suffix) or has("d8_" .. suffix))
+	return not(has("d0_" .. suffix) or has("d1_" .. suffix) or has("d2_" .. suffix) or has("d3_" .. suffix) or has("d4_" .. suffix) or has("d5_" .. suffix) or has("d6_" .. suffix) or has("d7_" .. suffix) or has("d8_" .. suffix))
 end
 
 local dungeon_index = {
-	["d1"] = 1,
-	["d2"] = 2,
-	["d3"] = 3,
-	["d4"] = 4,
-	["d5"] = 5,
-	["d6"] = 6,
-	["d7"] = 7,
-	["d8"] = 8
+	["d0"] = 1,
+	["d1"] = 2,
+	["d2"] = 3,
+	["d3"] = 4,
+	["d4"] = 5,
+	["d5"] = 6,
+	["d6"] = 7,
+	["d7"] = 8,
+	["d8"] = 9
 }
 
+
+function tracker_on_accessibility_updated(item_code)
+	tracker_on_dungeon_entrance_updated()
+end
+
+function tracker_on_dungeon_entrance_updated()
+	for dungeon,_ in pairs(dungeon_index) do
+		for entrance,_ in pairs(dungeon_index) do
+			if has(entrance .. "_from_" .. dungeon) then
+				update_dungeon_check(dungeon, entrance)
+			end
+		end
+	end
+end
 
 function update_dungeon_check(dungeon, entrance)
 	-- Tracker progessive dungeon entrance item
@@ -1364,24 +1381,6 @@ function update_dungeon_check(dungeon, entrance)
 	dummy_item.Active = false
 	-- Set the entrance to the right dungeon
 	entrance_item.CurrentStage = dungeon_index[dungeon]
-end
-
-function tracker_on_accessibility_updated(item_code)
-	if (item_code == "bombs") then
-		tracker_on_bomb_updated()
-	else
-		tracker_on_dungeon_entrance_updated()
-	end
-end
-function tracker_on_dungeon_entrance_updated()
-
-	for dungeon,_ in pairs(dungeon_index) do
-		for entrance,_ in pairs(dungeon_index) do
-			if has(dungeon .. "_from_" .. entrance) then
-				update_dungeon_check(dungeon, entrance)
-			end
-		end
-	end
 end
 
 function tracker_on_portal_entrance_updated()
@@ -1395,13 +1394,5 @@ function tracker_on_portal_entrance_updated()
 	-- 		end
 	-- end
 	-- 	end
-end
-		if bombs.AcquiredCount == 89 then
-	if bombs then
 
-function tracker_on_bomb_updated()
-	local bombs = Tracker:FindObjectForCode("bombs")
-			bombs.AcquiredCount = 90
-	end
-		end
 end

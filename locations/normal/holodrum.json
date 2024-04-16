@@ -201,7 +201,7 @@
 					}
 				]
 			},
-			{
+			/*{
 				"name": "Hero's Cave",
 				"sections": [
 					{
@@ -230,7 +230,7 @@
 					"y": 578
 					}
 				]
-			},
+			},*/
 			{
 				"name": "Maple",
 				"sections": [

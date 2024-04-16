@@ -6,10 +6,172 @@
 		"color": "#00ff08",
 		"children": [
 			{
+				"name": "Enter D0",
+				"access_rules": ["$enter_d0"],
+				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d0"],
+				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
+					{
+					  "name": "D1: Gnarled Root Dungeon",
+					  "hosted_item": "d1_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d1"]
+					},
+					{
+					  "name": "D2: Snake's Remains",
+					  "hosted_item": "d2_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d2"]
+					},
+					{
+					  "name": "D3: Poison Moth's Lair",
+					  "hosted_item": "d3_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d3"]
+					},
+					{
+					  "name": "D4: Dancing Dragon Dungeon",
+					  "hosted_item": "d4_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d4"]
+					},
+					{
+					  "name": "D5: Unicorn's Cave",
+					  "hosted_item": "d5_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d5"]
+					},
+					{
+					  "name": "D6: Ancient Ruins",
+					  "hosted_item": "d6_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d6"]
+					},
+					{
+					  "name": "D7: Explorer's Crypt",
+					  "hosted_item": "d7_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d7"]
+					},
+					{
+					  "name": "D8: Sword and Shield Maze",
+					  "hosted_item": "d8_from_d0",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d8"]
+					}
+				  ],
+				"map_locations": [
+					{
+					"map": "holodrum",
+					"x": 194,
+					"y": 578
+					}
+				]
+			},
+			{
+				"name": "Hero's Cave",
+				"sections": [
+					{
+					"name": "Hero's Cave: Topmost Chest",
+					"access_rules": ["$d0"]
+					},
+					{
+					"name": "Hero's Cave: Item in Basement Under Keese Room",
+					"access_rules": ["$kill_keese, $d0"]
+					},
+					{
+					"name": "Hero's Cave: Final Chest",
+					"access_rules": ["d0sk:1, $d0",
+						"d0_master_key, $d0"]
+					},
+					{
+					"name": "Hero's Cave: Alternative Entrance Chest",
+					"access_rules": ["$destroy_bush_flute, d2_alt_entrance_vanilla",
+						"d2_alt_entrance_removed, $d0"]
+					}
+				],
+				"map_locations": [
+					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonoff", "shuffledungeonon, d0_d0"]
+					},
+					{
+					  // D1 entrance
+					  "map": "holodrum",
+					  "x": 281,
+					  "y": 407,
+					  "restrict_visibility_rules": ["shuffledungeonon, d1_d0"]
+					},
+					{
+					  // D2 entrance
+					  "map": "holodrum",
+					  "x": 578,
+					  "y": 352,
+					  "restrict_visibility_rules": ["shuffledungeonon, d2_d0"]
+					},
+					{
+					  // D3 entrance
+					  "map": "holodrum",
+					  "x": 25,
+					  "y": 279,
+					  "restrict_visibility_rules": ["shuffledungeonon, d3_d0"]
+					},
+					{
+					  // D4 entrance
+					  "map": "holodrum",
+					  "x": 578,
+					  "y": 68,
+					  "restrict_visibility_rules": ["shuffledungeonon, d4_d0"]
+					},
+					{
+					  // D5 entrance
+					  "map": "holodrum",
+					  "x": 449,
+					  "y": 364,
+					  "restrict_visibility_rules": ["shuffledungeonon, d5_d0"]
+					},
+					{
+					  // D6 entrance
+					  "map": "holodrum",
+					  "x": 25,
+					  "y": 25,
+					  "restrict_visibility_rules": ["shuffledungeonon, d6_d0"]
+					},
+					{
+					  // D7 entrance
+					  "map": "holodrum",
+					  "x": 25,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d7_d0"]
+					},
+					{
+					  // D8 entrance
+					  "map": "subrosia",
+					  "x": 56,
+					  "y": 41,
+					  "restrict_visibility_rules": ["shuffledungeonon, d8_d0"]
+					}
+				  ]
+			},
+			{
 				"name": "Enter D1",
 				"access_rules": ["$enter_d1"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d1"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d1",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d1",
@@ -141,6 +303,13 @@
 				],
 				"map_locations": [
 					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d0_d1"]
+					},
+					{
 					  // D1 entrance
 					  "map": "holodrum",
 					  "x": 281,
@@ -203,6 +372,12 @@
 				"access_rules": ["$enter_d2"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d2"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d2",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d2",
@@ -346,6 +521,13 @@
 				],
 				"map_locations": [
 					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d0_d2"]
+					},
+					{
 					  // D1 entrance
 					  "map": "holodrum",
 					  "x": 281,
@@ -408,6 +590,12 @@
 				"access_rules": ["$enter_d3"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d3"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d3",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d3",
@@ -547,6 +735,13 @@
 				],
 				"map_locations": [
 					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d0_d3"]
+					},
+					{
 					  // D1 entrance
 					  "map": "holodrum",
 					  "x": 281,
@@ -609,6 +804,12 @@
 				"access_rules": ["$enter_d4"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d4"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d4",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d4",
@@ -760,6 +961,13 @@
 				],
 				"map_locations": [
 					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d0_d4"]
+					},
+					{
 					  // D1 entrance
 					  "map": "holodrum",
 					  "x": 281,
@@ -822,6 +1030,12 @@
 				"access_rules": ["$enter_d5"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d5"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d5",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d5",
@@ -975,6 +1189,13 @@
 				],
 				"map_locations": [
 					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d0_d5"]
+					},
+					{
 					  // D1 entrance
 					  "map": "holodrum",
 					  "x": 281,
@@ -1037,6 +1258,12 @@
 				"access_rules": ["$enter_d6"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d6"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d6",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d6",
@@ -1171,6 +1398,13 @@
 				],
 				"map_locations": [
 					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d0_d6"]
+					},
+					{
 					  // D1 entrance
 					  "map": "holodrum",
 					  "x": 281,
@@ -1233,6 +1467,12 @@
 				"access_rules": ["$enter_d7"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d7"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d7",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d7",
@@ -1406,6 +1646,13 @@
 				],
 				"map_locations": [
 					{
+					  // D0 entrance
+					  "map": "holodrum",
+					  "x": 194,
+					  "y": 578,
+					  "restrict_visibility_rules": ["shuffledungeonon, d0_d7"]
+					},
+					{
 					  // D1 entrance
 					  "map": "holodrum",
 					  "x": 281,
@@ -1468,6 +1715,12 @@
 				"access_rules": ["$enter_d8"],
 				"visibility_rules": ["shuffledungeonon, $entrance_not_assigned|d8"],
 				"sections": [
+					{
+					  "name": "D0: Hero's Cave",
+					  "hosted_item": "d0_from_d8",
+					  "item_count": 0,
+					  "visibility_rules": ["$dungeon_not_assigned|d0"]
+					},
 					{
 					  "name": "D1: Gnarled Root Dungeon",
 					  "hosted_item": "d1_from_d8",
@@ -1628,6 +1881,13 @@
 					}
 					],
 					"map_locations": [
+						{
+						  // D0 entrance
+						  "map": "holodrum",
+						  "x": 194,
+						  "y": 578,
+						  "restrict_visibility_rules": ["shuffledungeonon, d0_d8"]
+						},
 						{
 						  // D1 entrance
 						  "map": "holodrum",
