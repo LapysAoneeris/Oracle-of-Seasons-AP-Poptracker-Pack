@@ -1365,7 +1365,7 @@ end
 function tracker_on_dungeon_entrance_updated()
 	for dungeon,_ in pairs(dungeon_index) do
 		for entrance,_ in pairs(dungeon_index) do
-			if has(entrance .. "_from_" .. dungeon) then
+			if has(dungeon .. "_from_" .. entrance) then
 				update_dungeon_check(dungeon, entrance)
 			end
 		end
@@ -1374,13 +1374,16 @@ end
 
 function update_dungeon_check(dungeon, entrance)
 	-- Tracker progessive dungeon entrance item
-	local entrance_item = Tracker:FindObjectForCode(entrance .. "_ent")
-	-- dummy item for blue checks
+	local entrance_item = Tracker:FindObjectForCode(dungeon .. "_ent_selector")
+	-- dummy item for map checks
 	local dummy_item = Tracker:FindObjectForCode(dungeon .. "_from_" .. entrance)
 	-- disable the dummy items, so it won't trigger next time
 	dummy_item.Active = false
-	-- Set the entrance to the right dungeon
-	entrance_item.CurrentStage = dungeon_index[dungeon]
+	
+	if(entrance_item.CurrentStage == 0) then
+		-- Set the entrance to the right dungeon
+		entrance_item.CurrentStage = dungeon_index[entrance]
+	end
 end
 
 function tracker_on_portal_entrance_updated()
