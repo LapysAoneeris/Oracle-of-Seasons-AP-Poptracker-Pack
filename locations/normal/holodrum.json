@@ -201,36 +201,6 @@
 					}
 				]
 			},
-			/*{
-				"name": "Hero's Cave",
-				"sections": [
-					{
-					"name": "Hero's Cave: Topmost Chest",
-					"access_rules": ["$d0"]
-					},
-					{
-					"name": "Hero's Cave: Item in Basement Under Keese Room",
-					"access_rules": ["$kill_keese, $d0"]
-					},
-					{
-					"name": "Hero's Cave: Final Chest",
-					"access_rules": ["d0sk:1, $d0",
-						"d0_master_key, $d0"]
-					},
-					{
-					"name": "Hero's Cave: Alternative Entrance Chest",
-					"access_rules": ["$destroy_bush_flute, d2_alt_entrance_vanilla",
-						"d2_alt_entrance_removed, $d0"]
-					}
-				],
-				"map_locations": [
-					{
-					"map": "holodrum",
-					"x": 194,
-					"y": 578
-					}
-				]
-			},*/
 			{
 				"name": "Maple",
 				"sections": [
