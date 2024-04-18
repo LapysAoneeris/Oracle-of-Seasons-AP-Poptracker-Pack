@@ -1,0 +1,506 @@
+[
+    {
+        "name": "Dance from Eastern Suburbs",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_dance.png",
+        "codes": "suburbs_from_mountainsub"
+    },
+    {
+        "name": "Dance from Spool Swamp",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_dance.png",
+        "codes": "swamp_from_mountainsub"
+    },
+    {
+        "name": "Dance from Mount Cucco",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_dance.png",
+        "codes": "mtcucco_from_mountainsub"
+    },
+    {
+        "name": "Dance from Eyeglass Lake",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_dance.png",
+        "codes": "lake_from_mountainsub"
+    },
+    {
+        "name": "Dance from Temple Lower",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_dance.png",
+        "codes": "remains_from_mountainsub"
+    },
+    {
+        "name": "Dance from Temple Upper",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_dance.png",
+        "codes": "d8_from_mountainsub"
+    },
+    {
+        "name": "Dance from Village",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_dance.png",
+        "codes": "horon_from_mountainsub"
+    },
+    {
+        "name": "Market from Eastern Suburbs",
+        "type": "toggle",
+        "img": "images/portals/selector_rosa.png",
+        "codes": "suburbs_from_marketsub"
+    },
+    {
+        "name": "Market from Spool Swamp",
+        "type": "toggle",
+        "img": "images/portals/selector_rosa.png",
+        "codes": "swamp_from_marketsub"
+    },
+    {
+        "name": "Market from Mount Cucco",
+        "type": "toggle",
+        "img": "images/portals/selector_rosa.png",
+        "codes": "mtcucco_from_marketsub"
+    },
+    {
+        "name": "Market from Eyeglass Lake",
+        "type": "toggle",
+        "img": "images/portals/selector_rosa.png",
+        "codes": "lake_from_marketsub"
+    },
+    {
+        "name": "Market from Temple Lower",
+        "type": "toggle",
+        "img": "images/portals/selector_rosa.png",
+        "codes": "remains_from_marketsub"
+    },
+    {
+        "name": "Market from Temple Upper",
+        "type": "toggle",
+        "img": "images/portals/selector_rosa.png",
+        "codes": "d8_from_marketsub"
+    },
+    {
+        "name": "Market from Village",
+        "type": "toggle",
+        "img": "images/portals/selector_rosa.png",
+        "codes": "horon_from_marketsub"
+    },
+    {
+        "name": "Brothers from Eastern Suburbs",
+        "type": "toggle",
+        "img": "images/portals/selector_strange_brothers.png",
+        "codes": "suburbs_from_villagesub"
+    },
+    {
+        "name": "Brothers from Spool Swamp",
+        "type": "toggle",
+        "img": "images/portals/selector_strange_brothers.png",
+        "codes": "swamp_from_villagesub"
+    },
+    {
+        "name": "Brothers from Mount Cucco",
+        "type": "toggle",
+        "img": "images/portals/selector_strange_brothers.png",
+        "codes": "mtcucco_from_villagesub"
+    },
+    {
+        "name": "Brothers from Eyeglass Lake",
+        "type": "toggle",
+        "img": "images/portals/selector_strange_brothers.png",
+        "codes": "lake_from_villagesub"
+    },
+    {
+        "name": "Brothers from Temple Lower",
+        "type": "toggle",
+        "img": "images/portals/selector_strange_brothers.png",
+        "codes": "remains_from_villagesub"
+    },
+    {
+        "name": "Brothers from Temple Upper",
+        "type": "toggle",
+        "img": "images/portals/selector_strange_brothers.png",
+        "codes": "d8_from_villagesub"
+    },
+    {
+        "name": "Brothers from Village",
+        "type": "toggle",
+        "img": "images/portals/selector_strange_brothers.png",
+        "codes": "horon_from_villagesub"
+    },
+    {
+        "name": "Furnace from Eastern Suburbs",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_smithy.png",
+        "codes": "suburbs_from_furnacesub"
+    },
+    {
+        "name": "Furnace from Spool Swamp",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_smithy.png",
+        "codes": "swamp_from_furnacesub"
+    },
+    {
+        "name": "Furnace from Mount Cucco",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_smithy.png",
+        "codes": "mtcucco_from_furnacesub"
+    },
+    {
+        "name": "Furnace from Eyeglass Lake",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_smithy.png",
+        "codes": "lake_from_furnacesub"
+    },
+    {
+        "name": "Furnace from Temple Lower",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_smithy.png",
+        "codes": "remains_from_furnacesub"
+    },
+    {
+        "name": "Furnace from Temple Upper",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_smithy.png",
+        "codes": "d8_from_furnacesub"
+    },
+    {
+        "name": "Furnace from Village",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosian_smithy.png",
+        "codes": "horon_from_furnacesub"
+    },
+    {
+        "name": "Pirates from Eastern Suburbs",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosia_pirates.png",
+        "codes": "suburbs_from_piratessub"
+    },
+    {
+        "name": "Pirates from Spool Swamp",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosia_pirates.png",
+        "codes": "swamp_from_piratessub"
+    },
+    {
+        "name": "Pirates from Mount Cucco",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosia_pirates.png",
+        "codes": "mtcucco_from_piratessub"
+    },
+    {
+        "name": "Pirates from Eyeglass Lake",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosia_pirates.png",
+        "codes": "lake_from_piratessub"
+    },
+    {
+        "name": "Pirates from Temple Lower",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosia_pirates.png",
+        "codes": "remains_from_piratessub"
+    },
+    {
+        "name": "Pirates from Temple Upper",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosia_pirates.png",
+        "codes": "d8_from_piratessub"
+    },
+    {
+        "name": "Pirates from Village",
+        "type": "toggle",
+        "img": "images/portals/selector_subrosia_pirates.png",
+        "codes": "horon_from_piratessub"
+    },
+    {
+        "name": "Volcano from Eastern Suburbs",
+        "type": "toggle",
+        "img": "images/portals/selector_volcano.png",
+        "codes": "suburbs_from_volcanosub"
+    },
+    {
+        "name": "Volcano from Spool Swamp",
+        "type": "toggle",
+        "img": "images/portals/selector_volcano.png",
+        "codes": "swamp_from_volcanosub"
+    },
+    {
+        "name": "Volcano from Mount Cucco",
+        "type": "toggle",
+        "img": "images/portals/selector_volcano.png",
+        "codes": "mtcucco_from_volcanosub"
+    },
+    {
+        "name": "Volcano from Eyeglass Lake",
+        "type": "toggle",
+        "img": "images/portals/selector_volcano.png",
+        "codes": "lake_from_volcanosub"
+    },
+    {
+        "name": "Volcano from Temple Lower",
+        "type": "toggle",
+        "img": "images/portals/selector_volcano.png",
+        "codes": "remains_from_volcanosub"
+    },
+    {
+        "name": "Volcano from Temple Upper",
+        "type": "toggle",
+        "img": "images/portals/selector_volcano.png",
+        "codes": "d8_from_volcanosub"
+    },
+    {
+        "name": "Volcano from Village",
+        "type": "toggle",
+        "img": "images/portals/selector_volcano.png",
+        "codes": "horon_from_volcanosub"
+    },
+    {
+        "name": "D8 from Eastern Suburbs",
+        "type": "toggle",
+        "img": "images/portals/selector_D8.png",
+        "codes": "suburbs_from_d8sub"
+    },
+    {
+        "name": "D8 from Spool Swamp",
+        "type": "toggle",
+        "img": "images/portals/selector_D8.png",
+        "codes": "swamp_from_d8sub"
+    },
+    {
+        "name": "D8 from Mount Cucco",
+        "type": "toggle",
+        "img": "images/portals/selector_D8.png",
+        "codes": "mtcucco_from_d8sub"
+    },
+    {
+        "name": "D8 from Eyeglass Lake",
+        "type": "toggle",
+        "img": "images/portals/selector_D8.png",
+        "codes": "lake_from_d8sub"
+    },
+    {
+        "name": "D8 from Temple Lower",
+        "type": "toggle",
+        "img": "images/portals/selector_D8.png",
+        "codes": "remains_from_d8sub"
+    },
+    {
+        "name": "D8 from Temple Upper",
+        "type": "toggle",
+        "img": "images/portals/selector_D8.png",
+        "codes": "d8_from_d8sub"
+    },
+    {
+        "name": "D8 from Village",
+        "type": "toggle",
+        "img": "images/portals/selector_D8.png",
+        "codes": "horon_from_d8sub"
+    },
+    {
+        "name": "Eastern Suburbs from Dance",
+        "type": "toggle",
+        "img": "images/portals/sportal_eastern_suburbs.png",
+        "codes": "mountainsub_from_suburbs"
+    },
+    {
+        "name": "Spool Swamp from Dance",
+        "type": "toggle",
+        "img": "images/portals/sportal_spool_swamp.png",
+        "codes": "mountainsub_from_swamp"
+    },
+    {
+        "name": "Mount Cucco from Dance",
+        "type": "toggle",
+        "img": "images/portals/sportal_mt_cucco.png",
+        "codes": "mountainsub_from_mtcucco"
+    },
+    {
+        "name": "Eyeglass Lake from Dance",
+        "type": "toggle",
+        "img": "images/portals/sportal_north_horon.png",
+        "codes": "mountainsub_from_lake"
+    },
+    {
+        "name": "Temple Lower from Dance",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_bottom.png",
+        "codes": "mountainsub_from_remains"
+    },
+    {
+        "name": "Temple Upper from Dance",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_peak.png",
+        "codes": "mountainsub_from_d8"
+    },
+    {
+        "name": "Village from Dance",
+        "type": "toggle",
+        "img": "images/portals/sportal_horon_village.png",
+        "codes": "mountainsub_from_horon"
+    },
+    {
+        "name": "Eastern Suburbs from Market",
+        "type": "toggle",
+        "img": "images/portals/sportal_eastern_suburbs.png",
+        "codes": "marketsub_from_suburbs"
+    },
+    {
+        "name": "Spool Swamp from Market",
+        "type": "toggle",
+        "img": "images/portals/sportal_spool_swamp.png",
+        "codes": "marketsub_from_swamp"
+    },
+    {
+        "name": "Mount Cucco from Market",
+        "type": "toggle",
+        "img": "images/portals/sportal_mt_cucco.png",
+        "codes": "marketsub_from_mtcucco"
+    },
+    {
+        "name": "Eyeglass Lake from Market",
+        "type": "toggle",
+        "img": "images/portals/sportal_north_horon.png",
+        "codes": "marketsub_from_lake"
+    },
+    {
+        "name": "Temple Lower from Market",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_bottom.png",
+        "codes": "marketsub_from_remains"
+    },
+    {
+        "name": "Temple Upper from Market",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_peak.png",
+        "codes": "marketsub_from_d8"
+    },
+    {
+        "name": "Village from Market",
+        "type": "toggle",
+        "img": "images/portals/sportal_horon_village.png",
+        "codes": "marketsub_from_horon"
+    },
+    {
+        "name": "Eastern Suburbs from Brothers",
+        "type": "toggle",
+        "img": "images/portals/sportal_eastern_suburbs.png",
+        "codes": "villagesub_from_suburbs"
+    },
+    {
+        "name": "Spool Swamp from Brothers",
+        "type": "toggle",
+        "img": "images/portals/sportal_spool_swamp.png",
+        "codes": "villagesub_from_swamp"
+    },
+    {
+        "name": "Mount Cucco from Brothers",
+        "type": "toggle",
+        "img": "images/portals/sportal_mt_cucco.png",
+        "codes": "villagesub_from_mtcucco"
+    },
+    {
+        "name": "Eyeglass Lake from Brothers",
+        "type": "toggle",
+        "img": "images/portals/sportal_north_horon.png",
+        "codes": "villagesub_from_lake"
+    },
+    {
+        "name": "Temple Lower from Brothers",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_bottom.png",
+        "codes": "villagesub_from_remains"
+    },
+    {
+        "name": "Temple Upper from Brothers",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_peak.png",
+        "codes": "villagesub_from_d8"
+    },
+    {
+        "name": "Village from Brothers",
+        "type": "toggle",
+        "img": "images/portals/sportal_horon_village.png",
+        "codes": "villagesub_from_horon"
+    },
+    {
+        "name": "Eastern Suburbs from Pirates",
+        "type": "toggle",
+        "img": "images/portals/sportal_eastern_suburbs.png",
+        "codes": "piratessub_from_suburbs"
+    },
+    {
+        "name": "Spool Swamp from Pirates",
+        "type": "toggle",
+        "img": "images/portals/sportal_spool_swamp.png",
+        "codes": "piratessub_from_swamp"
+    },
+    {
+        "name": "Mount Cucco from Pirates",
+        "type": "toggle",
+        "img": "images/portals/sportal_mt_cucco.png",
+        "codes": "piratessub_from_mtcucco"
+    },
+    {
+        "name": "Eyeglass Lake from Pirates",
+        "type": "toggle",
+        "img": "images/portals/sportal_north_horon.png",
+        "codes": "piratessub_from_lake"
+    },
+    {
+        "name": "Temple Lower from Pirates",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_bottom.png",
+        "codes": "piratessub_from_remains"
+    },
+    {
+        "name": "Temple Upper from Pirates",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_peak.png",
+        "codes": "piratessub_from_d8"
+    },
+    {
+        "name": "Village from Pirates",
+        "type": "toggle",
+        "img": "images/portals/sportal_horon_village.png",
+        "codes": "piratessub_from_horon"
+    },
+    {
+        "name": "Eastern Suburbs from Furnace",
+        "type": "toggle",
+        "img": "images/portals/sportal_eastern_suburbs.png",
+        "codes": "furnacesub_from_suburbs"
+    },
+    {
+        "name": "Spool Swamp from Furnace",
+        "type": "toggle",
+        "img": "images/portals/sportal_spool_swamp.png",
+        "codes": "furnacesub_from_swamp"
+    },
+    {
+        "name": "Mount Cucco from Furnace",
+        "type": "toggle",
+        "img": "images/portals/sportal_mt_cucco.png",
+        "codes": "furnacesub_from_mtcucco"
+    },
+    {
+        "name": "Eyeglass Lake from Furnace",
+        "type": "toggle",
+        "img": "images/portals/sportal_north_horon.png",
+        "codes": "furnacesub_from_lake"
+    },
+    {
+        "name": "Temple Lower from Furnace",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_bottom.png",
+        "codes": "furnacesub_from_remains"
+    },
+    {
+        "name": "Temple Upper from Furnace",
+        "type": "toggle",
+        "img": "images/portals/sportal_temple_peak.png",
+        "codes": "furnacesub_from_d8"
+    },
+    {
+        "name": "Village from Furnace",
+        "type": "toggle",
+        "img": "images/portals/sportal_horon_village.png",
+        "codes": "furnacesub_from_horon"
+    }
+]

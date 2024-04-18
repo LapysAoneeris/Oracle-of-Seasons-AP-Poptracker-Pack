@@ -1335,6 +1335,11 @@ ScriptHost:AddWatchForCode("portal settings handler", "portalshuffle", vanilla_p
 ScriptHost:AddWatchForCode("portal handler", "fill_portals", display_portals)
 
 
+function tracker_on_accessibility_updated(item_code)
+	tracker_on_dungeon_entrance_updated()
+	tracker_on_portal_entrance_updated()
+end
+
 -- DUNGEON CHECK RULES --
 
 function entrance_not_assigned(prefix)
@@ -1356,11 +1361,6 @@ local dungeon_index = {
 	["d7"] = 8,
 	["d8"] = 9
 }
-
-
-function tracker_on_accessibility_updated(item_code)
-	tracker_on_dungeon_entrance_updated()
-end
 
 function tracker_on_dungeon_entrance_updated()
 	for dungeon,_ in pairs(dungeon_index) do
@@ -1386,16 +1386,68 @@ function update_dungeon_check(dungeon, entrance)
 	end
 end
 
-function tracker_on_portal_entrance_updated()
-	-- for portal,_ in pairs(portal_holodrum_index) do
-	-- 	for access,_ in pairs(portal_subrosia_index) do
-	-- 		if has(portal .. "_" .. access) then
-	-- 			update_portal_check(portal, access)
-	-- 		end
-	-- 		if has(access .. "_" .. portal) then
-	-- 			update_portal_check(portal, access)
-	-- 		end
-	-- end
-	-- 	end
 
+-- PORTAL CHECK RULES --
+
+function portal_not_assigned_prefix(prefix)
+	return not(has(prefix .. "_mountainsub") or has(prefix .. "_marketsub") or has(prefix .. "_villagesub") or has(prefix .. "_furnacesub") or has(prefix .. "_piratessub") or has(prefix .. "_volcanosub") or has(prefix .. "_d8sub"))
+end
+function portal_not_assigned_sufix(suffix)
+	return not(has("suburbs_" .. suffix) or has("swamp_" .. suffix) or has("mtcucco_" .. suffix) or has("lake_" .. suffix) or has("remains_" .. suffix) or has("d8_" .. suffix) or has("horon_" .. suffix))
+end
+
+
+local portal_holodrum_index = {
+	["suburbs"] = 1,
+	["swamp"] = 2,
+	["lake"] = 3,
+	["mtcucco"] = 4,
+	["horon"] = 5,
+	["remains"] = 6,
+	["d8"] = 7
+}
+
+local portal_subrosia_index = {
+	["mountainsub"] = 1,
+	["marketsub"] = 2,
+	["furnacesub"] = 3,
+	["villagesub"] = 4,
+	["piratessub"] = 5,
+	["volcanosub"] = 6,
+	["d8sub"] = 7
+}
+
+
+function tracker_on_portal_entrance_updated()
+	for portal,_ in pairs(portal_holodrum_index) do
+		for access,_ in pairs(portal_subrosia_index) do
+			if has(portal .. "_from_" .. access) then
+				update_portal_check(portal, access)
+			elseif has(access .. "_from_" .. portal) then
+				update_portal_check(portal, access)
+			end
+		end
+	end
+end
+
+function update_portal_check(portal, access)
+	-- Tracker progessive portal entrance item
+	local access_item = Tracker:FindObjectForCode(portal .. "_portal_selector")
+
+	-- dummy item for map checks
+	local dummy_item = Tracker:FindObjectForCode(portal .. "_from_" .. access)
+	if dummy_item then
+		dummy_item.Active = false
+	end
+
+	--return dummy item for when we are on Subrosian map
+	dummy_item = Tracker:FindObjectForCode(access .. "_from_" .. portal)
+	if dummy_item then
+		dummy_item.Active = false
+	end
+
+	if(access_item.CurrentStage == 0) then
+		-- Set the exit to the right portal
+		access_item.CurrentStage = portal_subrosia_index[access]
+	end
 end

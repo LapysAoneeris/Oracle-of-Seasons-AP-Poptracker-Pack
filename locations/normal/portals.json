@@ -1,0 +1,745 @@
+[
+    {
+      "name": "Portals",
+      "chest_unopened_img": "images/portals/Subrosian_portal.png",
+      "chest_opened_img": "images/portals/Subrosian_portal.png",
+      "color": "#00ff08",
+      "children": [
+        {
+          "name": "North Horon",
+          "children": [
+            {
+              "name": "Check Eyeglass Lake Portal",
+              "access_rules": ["$portal_lake_enter"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_prefix|lake"],
+              "sections": [
+                {
+                  "name": "Portal Dance",
+                  "hosted_item": "lake_from_mountainsub",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_sufix|mountainsub"]
+                },
+                {
+                  "name": "Portal Market",
+                  "hosted_item": "lake_from_marketsub",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_sufix|marketsub" ]
+                },
+                {
+                  "name": "Portal Brothers",
+                  "hosted_item": "lake_from_villagesub",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_sufix|villagesub"]
+                },
+                {
+                  "name": "Portal Furnace",
+                  "hosted_item": "lake_from_furnacesub",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_sufix|furnacesub"]
+                },
+                {
+                  "name": "Portal Pirates",
+                  "hosted_item": "lake_from_piratessub",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_sufix|piratessub"]
+                },
+                {
+                  "name": "Portal Volcano",
+                  "hosted_item": "lake_from_volcanosub",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_sufix|volcanosub"]
+                },
+                {
+                  "name": "Portal D8",
+                  "hosted_item": "lake_from_d8sub",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_sufix|d8sub"]
+                }
+              ],
+              "map_locations": [
+                {
+                  // Eyeglass Lake Portal
+                  "map": "holodrum",
+                  "x": 395,
+                  "y": 485
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eastern Suburbs",
+          "children": [
+            {
+              "name": "Check Eastern Suburbs Portal",
+              "access_rules": ["$portal_suburbs_enter"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_prefix|suburbs"],
+              "sections": [
+                {
+                    "name": "Portal Dance",
+                    "hosted_item": "suburbs_from_mountainsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|mountainsub"]
+                  },
+                  {
+                    "name": "Portal Market",
+                    "hosted_item": "suburbs_from_marketsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|marketsub" ]
+                  },
+                  {
+                    "name": "Portal Brothers",
+                    "hosted_item": "suburbs_from_villagesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|villagesub"]
+                  },
+                  {
+                    "name": "Portal Furnace",
+                    "hosted_item": "suburbs_from_furnacesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|furnacesub"]
+                  },
+                  {
+                    "name": "Portal Pirates",
+                    "hosted_item": "suburbs_from_piratessub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|piratessub"]
+                  },
+                  {
+                    "name": "Portal Volcano",
+                    "hosted_item": "suburbs_from_volcanosub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|volcanosub"]
+                  },
+                  {
+                    "name": "Portal D8",
+                    "hosted_item": "suburbs_from_d8sub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|d8sub"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Eastern Suburbs Portal
+                  "map": "holodrum",
+                  "x": 447,
+                  "y": 408
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mount Cucco",
+          "children": [
+            {
+              "name": "Check Mount Cucco Portal",
+              "access_rules": ["$portal_mtcucco_enter"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_prefix|mtcucco"],
+              "sections": [
+                {
+                    "name": "Portal Dance",
+                    "hosted_item": "mtcucco_from_mountainsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|mountainsub"]
+                  },
+                  {
+                    "name": "Portal Market",
+                    "hosted_item": "mtcucco_from_marketsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|marketsub" ]
+                  },
+                  {
+                    "name": "Portal Brothers",
+                    "hosted_item": "mtcucco_from_villagesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|villagesub"]
+                  },
+                  {
+                    "name": "Portal Furnace",
+                    "hosted_item": "mtcucco_from_furnacesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|furnacesub"]
+                  },
+                  {
+                    "name": "Portal Pirates",
+                    "hosted_item": "mtcucco_from_piratessub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|piratessub"]
+                  },
+                  {
+                    "name": "Portal Volcano",
+                    "hosted_item": "mtcucco_from_volcanosub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|volcanosub"]
+                  },
+                  {
+                    "name": "Portal D8",
+                    "hosted_item": "mtcucco_from_d8sub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|d8sub"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Mount Cucco Portal
+                  "map": "holodrum",
+                  "x": 618,
+                  "y": 74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Spool Swamp",
+          "children": [
+            {
+              "name": "Check Spool Swamp Portal",
+              "access_rules": ["$portal_swamp_enter"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_prefix|swamp"],
+              "sections": [
+                {
+                    "name": "Portal Dance",
+                    "hosted_item": "swamp_from_mountainsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|mountainsub"]
+                  },
+                  {
+                    "name": "Portal Market",
+                    "hosted_item": "swamp_from_marketsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|marketsub" ]
+                  },
+                  {
+                    "name": "Portal Brothers",
+                    "hosted_item": "swamp_from_villagesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|villagesub"]
+                  },
+                  {
+                    "name": "Portal Furnace",
+                    "hosted_item": "swamp_from_furnacesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|furnacesub"]
+                  },
+                  {
+                    "name": "Portal Pirates",
+                    "hosted_item": "swamp_from_piratessub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|piratessub"]
+                  },
+                  {
+                    "name": "Portal Volcano",
+                    "hosted_item": "swamp_from_volcanosub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|volcanosub"]
+                  },
+                  {
+                    "name": "Portal D8",
+                    "hosted_item": "swamp_from_d8sub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|d8sub"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Spool Swamp Portal
+                  "map": "holodrum",
+                  "x": 21,
+                  "y": 489
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Horon Village",
+          "children": [
+            {
+              "name": "Check Horon Village Portal",
+              "access_rules": ["$portal_village_enter"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_prefix|horon"],
+              "sections": [
+                {
+                    "name": "Portal Dance",
+                    "hosted_item": "horon_from_mountainsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|mountainsub"]
+                  },
+                  {
+                    "name": "Portal Market",
+                    "hosted_item": "horon_from_marketsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|marketsub" ]
+                  },
+                  {
+                    "name": "Portal Brothers",
+                    "hosted_item": "horon_from_villagesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|villagesub"]
+                  },
+                  {
+                    "name": "Portal Furnace",
+                    "hosted_item": "horon_from_furnacesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|furnacesub"]
+                  },
+                  {
+                    "name": "Portal Pirates",
+                    "hosted_item": "horon_from_piratessub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|piratessub"]
+                  },
+                  {
+                    "name": "Portal Volcano",
+                    "hosted_item": "horon_from_volcanosub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|volcanosub"]
+                  },
+                  {
+                    "name": "Portal D8",
+                    "hosted_item": "horon_from_d8sub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|d8sub"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Horon Village Portal
+                  "map": "holodrum",
+                  "x": 315,
+                  "y": 662
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Temple Remains",
+          "children": [
+            {
+              "name": "Check Lower Temple Remains Portal",
+              "access_rules": ["$portal_remains_enter"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_prefix|remains"],
+              "sections": [
+                {
+                    "name": "Portal Dance",
+                    "hosted_item": "remains_from_mountainsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|mountainsub"]
+                  },
+                  {
+                    "name": "Portal Market",
+                    "hosted_item": "remains_from_marketsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|marketsub" ]
+                  },
+                  {
+                    "name": "Portal Brothers",
+                    "hosted_item": "remains_from_villagesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|villagesub"]
+                  },
+                  {
+                    "name": "Portal Furnace",
+                    "hosted_item": "remains_from_furnacesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|furnacesub"]
+                  },
+                  {
+                    "name": "Portal Pirates",
+                    "hosted_item": "remains_from_piratessub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|piratessub"]
+                  },
+                  {
+                    "name": "Portal Volcano",
+                    "hosted_item": "remains_from_volcanosub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|volcanosub"]
+                  },
+                  {
+                    "name": "Portal D8",
+                    "hosted_item": "remains_from_d8sub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|d8sub"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Lower Temple Remains Portal
+                  "map": "holodrum",
+                  "x": 230,
+                  "y": 98
+                }
+              ]
+            },
+            {
+              "name": "Check Upper Temple Remains Portal",
+              "access_rules": ["$portal_d8_enter"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_prefix|d8"],
+              "sections": [
+                {
+                    "name": "Portal Dance",
+                    "hosted_item": "d8_from_mountainsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|mountainsub"]
+                  },
+                  {
+                    "name": "Portal Market",
+                    "hosted_item": "d8_from_marketsub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|marketsub" ]
+                  },
+                  {
+                    "name": "Portal Brothers",
+                    "hosted_item": "d8_from_villagesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|villagesub"]
+                  },
+                  {
+                    "name": "Portal Furnace",
+                    "hosted_item": "d8_from_furnacesub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|furnacesub"]
+                  },
+                  {
+                    "name": "Portal Pirates",
+                    "hosted_item": "d8_from_piratessub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|piratessub"]
+                  },
+                  {
+                    "name": "Portal Volcano",
+                    "hosted_item": "d8_from_volcanosub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|volcanosub"]
+                  },
+                  {
+                    "name": "Portal D8",
+                    "hosted_item": "d8_from_d8sub",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_sufix|d8sub"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Upper Temple Remains Portal
+                  "map": "holodrum",
+                  "x": 202,
+                  "y": 13
+                }
+              ]
+            }
+          ]
+        },
+        //SUBROSIA
+        {
+          "name": "Temple",
+          "children": [
+            {
+              "name": "Check Dance Portal",
+              "access_rules": ["$reenter_mountain"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_sufix|mountainsub"],
+              "sections": [
+                {
+                  "name": "Portal Eastern Suburbs",
+                  "hosted_item": "mountainsub_from_suburbs",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_prefix|suburbs"]
+                },
+                {
+                  "name": "Portal Spool Swamp",
+                  "hosted_item": "mountainsub_from_swamp",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_prefix|swamp"]
+                },
+                {
+                  "name": "Portal Mount Cucco",
+                  "hosted_item": "mountainsub_from_mtcucco",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_prefix|mtcucco"]
+                },
+                {
+                  "name": "Portal Eyeglass Lake",
+                  "hosted_item": "mountainsub_from_lake",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_prefix|lake"]
+                },
+                {
+                  "name": "Portal Lower Temple Remains",
+                  "hosted_item": "mountainsub_from_remains",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_prefix|remains"]
+                },
+                {
+                  "name": "Portal Upper Temple Remains",
+                  "hosted_item": "mountainsub_from_d8",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_prefix|d8"]
+                },
+                {
+                  "name": "Portal Horon Village",
+                  "hosted_item": "mountainsub_from_horon",
+                  "item_count": 0,
+                  "visibility_rules": ["$portal_not_assigned_prefix|horon"]
+                }
+              ],
+              "map_locations": [
+                {
+                  // Dance portal
+                  "map": "subrosia",
+                  "x": 872,
+                  "y": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Beach",
+          "children": [
+            {
+              "name": "Check Market Portal",
+              "access_rules": ["$reenter_market"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_sufix|marketsub"],
+              "sections": [
+                {
+                    "name": "Portal Eastern Suburbs",
+                    "hosted_item": "marketsub_from_suburbs",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|suburbs"]
+                  },
+                  {
+                    "name": "Portal Spool Swamp",
+                    "hosted_item": "marketsub_from_swamp",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|swamp"]
+                  },
+                  {
+                    "name": "Portal Mount Cucco",
+                    "hosted_item": "marketsub_from_mtcucco",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|mtcucco"]
+                  },
+                  {
+                    "name": "Portal Eyeglass Lake",
+                    "hosted_item": "marketsub_from_lake",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|lake"]
+                  },
+                  {
+                    "name": "Portal Lower Temple Remains",
+                    "hosted_item": "marketsub_from_remains",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|remains"]
+                  },
+                  {
+                    "name": "Portal Upper Temple Remains",
+                    "hosted_item": "marketsub_from_d8",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|d8"]
+                  },
+                  {
+                    "name": "Portal Horon Village",
+                    "hosted_item": "marketsub_from_horon",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|horon"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Market Portal
+                  "map": "subrosia",
+                  "x": 1159,
+                  "y": 679
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hide and Seek",
+          "children": [
+            {
+              "name": "Check Strange Brothers Portal",
+              "access_rules": ["$reenter_village"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_sufix|villagesub"],
+              "sections": [
+                {
+                    "name": "Portal Eastern Suburbs",
+                    "hosted_item": "villagesub_from_suburbs",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|suburbs"]
+                  },
+                  {
+                    "name": "Portal Spool Swamp",
+                    "hosted_item": "villagesub_from_swamp",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|swamp"]
+                  },
+                  {
+                    "name": "Portal Mount Cucco",
+                    "hosted_item": "villagesub_from_mtcucco",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|mtcucco"]
+                  },
+                  {
+                    "name": "Portal Eyeglass Lake",
+                    "hosted_item": "villagesub_from_lake",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|lake"]
+                  },
+                  {
+                    "name": "Portal Lower Temple Remains",
+                    "hosted_item": "villagesub_from_remains",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|remains"]
+                  },
+                  {
+                    "name": "Portal Upper Temple Remains",
+                    "hosted_item": "villagesub_from_d8",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|d8"]
+                  },
+                  {
+                    "name": "Portal Horon Village",
+                    "hosted_item": "villagesub_from_horon",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|horon"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Strange Brothers Portal
+                  "map": "subrosia",
+                  "x": 538,
+                  "y": 745
+                }
+              ]
+            },
+            {
+              "name": "Check Pirates Portal",
+              "access_rules": ["$reenter_pirates"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_sufix|piratessub"],
+              "sections": [
+                {
+                    "name": "Portal Eastern Suburbs",
+                    "hosted_item": "piratessub_from_suburbs",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|suburbs"]
+                  },
+                  {
+                    "name": "Portal Spool Swamp",
+                    "hosted_item": "piratessub_from_swamp",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|swamp"]
+                  },
+                  {
+                    "name": "Portal Mount Cucco",
+                    "hosted_item": "piratessub_from_mtcucco",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|mtcucco"]
+                  },
+                  {
+                    "name": "Portal Eyeglass Lake",
+                    "hosted_item": "piratessub_from_lake",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|lake"]
+                  },
+                  {
+                    "name": "Portal Lower Temple Remains",
+                    "hosted_item": "piratessub_from_remains",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|remains"]
+                  },
+                  {
+                    "name": "Portal Upper Temple Remains",
+                    "hosted_item": "piratessub_from_d8",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|d8"]
+                  },
+                  {
+                    "name": "Portal Horon Village",
+                    "hosted_item": "piratessub_from_horon",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|horon"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Pirates Portal
+                  "map": "subrosia",
+                  "x": 389,
+                  "y": 937
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Furnace",
+          "children": [
+            {
+              "name": "Check Furnace Portal",
+              "access_rules": ["$reenter_furnace"],
+              "visibility_rules": ["portalshuffleon, $portal_not_assigned_sufix|furnacesub"],
+              "sections": [
+                {
+                    "name": "Portal Eastern Suburbs",
+                    "hosted_item": "furnacesub_from_suburbs",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|suburbs"]
+                  },
+                  {
+                    "name": "Portal Spool Swamp",
+                    "hosted_item": "furnacesub_from_swamp",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|swamp"]
+                  },
+                  {
+                    "name": "Portal Mount Cucco",
+                    "hosted_item": "furnacesub_from_mtcucco",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|mtcucco"]
+                  },
+                  {
+                    "name": "Portal Eyeglass Lake",
+                    "hosted_item": "furnacesub_from_lake",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|lake"]
+                  },
+                  {
+                    "name": "Portal Lower Temple Remains",
+                    "hosted_item": "furnacesub_from_remains",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|remains"]
+                  },
+                  {
+                    "name": "Portal Upper Temple Remains",
+                    "hosted_item": "furnacesub_from_d8",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|d8"]
+                  },
+                  {
+                    "name": "Portal Horon Village",
+                    "hosted_item": "furnacesub_from_horon",
+                    "item_count": 0,
+                    "visibility_rules": ["$portal_not_assigned_prefix|horon"]
+                  }
+              ],
+              "map_locations": [
+                {
+                  // Furnace Portal
+                  "map": "subrosia",
+                  "x": 1674,
+                  "y": 570
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
