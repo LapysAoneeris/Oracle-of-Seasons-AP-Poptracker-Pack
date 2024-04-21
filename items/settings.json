@@ -2195,7 +2195,7 @@
       },
       {
         "img": "images/labels/D1_entrance_toggle.png",
-        "codes": "d1_hidden",
+        "codes": "d1_d1_hidden",
 		    "inherit_codes": false
       },
       {
@@ -2565,7 +2565,7 @@
       },
 	    {
         "img": "images/labels/D3_entrance_toggle.png",
-        "codes": "3_d4_hidden",
+        "codes": "d3_d4_hidden",
 		    "inherit_codes": false
       },
 	    {

@@ -1,6 +1,7 @@
 Tracker:AddLocations("locations/holodrum.json")
 Tracker:AddLocations("locations/subrosia.json")
 Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/portals.json")
 Tracker:AddLocations("locations/gnarled_root_dungeon.json")
 Tracker:AddLocations("locations/snakes_remains.json")
 Tracker:AddLocations("locations/poison_moths_lair.json")

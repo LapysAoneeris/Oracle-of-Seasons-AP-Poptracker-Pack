@@ -14,24 +14,15 @@
 					},
 					{
 					"name": "Horon Village: Item Inside Maku Tree (3+ Essences)",
-					"access_rules": ["$has|essences|3",
-						"$has|essences|4",
-						"$has|essences|5",
-						"$has|essences|6",
-						"$has|essences|7",
-						"$has|essences|8"]
+					"access_rules": ["essences:3"]
 					},
 					{
 					"name": "Horon Village: Item Inside Maku Tree (5+ Essences)",
-					"access_rules": ["$has|essences|5",
-						"$has|essences|6",
-						"$has|essences|7",
-						"$has|essences|8"]
+					"access_rules": ["essences:5"]
 					},
 					{
 					"name": "Horon Village: Item Inside Maku Tree (7+ Essences)",
-					"access_rules": ["$has|essences|7",
-						"$has|essences|8"]
+					"access_rules": ["essences:7"]
 					}
 				],
 				"map_locations": [
@@ -81,7 +72,7 @@
 				"sections": [
 					{
 					"name": "Horon Village: Item Behind Small Tree",
-					"access_rules": ["$use_seeds, emberseeds"]
+					"access_rules": ["{}", "$use_seeds, emberseeds"]
 					}
 				],
 				"map_locations": [
@@ -147,19 +138,19 @@
 					},
 					{
 						"name": "Horon Village: Shop #3",
-						"visibility_rules": ["horon_potion_off"]
+						"visibility_rules": ["horon_potion_off"] 
 					},
 					{
-					"name": "Horon Village: Member's Shop #1",
-					"access_rules": ["$member_shop"]
+						"name": "Horon Village: Member's Shop #1",
+						"access_rules": ["$member_shop"]
 					},
 					{
-					"name": "Horon Village: Member's Shop #2",
-					"access_rules": ["$member_shop"]
+						"name": "Horon Village: Member's Shop #2",
+						"access_rules": ["$member_shop"]
 					},
 					{
-					"name": "Horon Village: Member's Shop #3",
-					"access_rules": ["$member_shop"]
+						"name": "Horon Village: Member's Shop #3",
+						"access_rules": ["$member_shop"]
 					}
 					
 				],
@@ -212,56 +203,6 @@
 				]
 			},
 			{
-				"name": "Enter D0",
-				"visibility_rules": ["shuffledungeonon"],
-				"sections": [
-					{
-					"name": "Enter D0"
-					}
-				],
-				"map_locations": [
-					{
-					"map": "holodrum",
-					"x": 172,
-					"y": 578
-					}
-				]
-			},
-			{
-				"name": "Hero's Cave",
-				"sections": [
-					{
-					"name": "Hero's Cave: Topmost Chest",
-					"access_rules": ["$d0",
-						"$destroy_bush_flute, d0_alt_entrance_vanilla"]
-					},
-					{
-					"name": "Hero's Cave: Item in Basement Under Keese Room",
-					"access_rules": ["$kill_keese, $d0",
-						"$destroy_bush_flute, d0_alt_entrance_vanilla, $kill_keese"]
-					},
-					{
-					"name": "Hero's Cave: Final Chest",
-					"access_rules": ["d0sk:1, $d0",
-						"d0_master_key, $d0",
-						"$destroy_bush_flute, d0_alt_entrance_vanilla, d0sk:1",
-						"$destroy_bush_flute, d0_alt_entrance_vanilla, d0_master_key"]
-					},
-					{
-					"name": "Hero's Cave: Alternative Entrance Chest",
-					"access_rules": ["$destroy_bush_flute, d0_alt_entrance_vanilla",
-						"d0_alt_entrance_removed, $d0"]
-					}
-				],
-				"map_locations": [
-					{
-					"map": "holodrum",
-					"x": 194,
-					"y": 578
-					}
-				]
-			},
-			{
 				"name": "Maple",
 				"sections": [
 					{
@@ -294,7 +235,7 @@
 				]
 			},
 			{
-				"name": "Golden Darknut",
+				"name": "Golden Darknut - Spring",
 				"chest_unopened_img":"images/items/golden_darknut.png",
 				"chest_opened_img":"images/items/golden_darknut_defeated.png",
 				"access_rules": ["coast_spring",
@@ -427,10 +368,10 @@
 					{
 					"name": "North Horon: Golden Beasts Old Man",
 					"access_rules": ["golden0",
-						"$has|beasts|1, golden1", "$has|beasts|2, golden1", "$has|beasts|3, golden1", "$has|beasts|4, golden1",
-						"$has|beasts|2, golden2", "$has|beasts|3, golden2", "$has|beasts|4, golden2",
-						"$has|beasts|3, golden3", "$has|beasts|4, golden3",
-						"$has|beasts|4, golden4"]
+						"beasts:1, golden1",
+						"beasts:2, golden2",
+						"beasts:3, golden3",
+						"beasts:4, golden4"]
 					}
 				],
 				"map_locations": [
@@ -559,7 +500,7 @@
 				]
 			},
 			{
-				"name": "Golden Moblin",
+				"name": "Golden Moblin - Autumn",
 				"access_rules": ["$mystery_tree"],
 				"sections": [
 					{
@@ -722,14 +663,14 @@
 					{
 					"name": "Holodrum Plain: Old Man in Treehouse",
 					"access_rules": ["oldman0",
-						"$has|essences|1, oldman1", "$has|essences|2, oldman1", "$has|essences|3, oldman1", "$has|essences|4, oldman1", "$has|essences|5, oldman1", "$has|essences|6, oldman1", "$has|essences|7, oldman1", "$has|essences|8, oldman1",
-						"$has|essences|2, oldman2", "$has|essences|3, oldman2", "$has|essences|4, oldman2", "$has|essences|5, oldman2", "$has|essences|6, oldman2", "$has|essences|7, oldman2", "$has|essences|8, oldman2",
-						"$has|essences|3, oldman3", "$has|essences|4, oldman3", "$has|essences|5, oldman3", "$has|essences|6, oldman3", "$has|essences|7, oldman3", "$has|essences|8, oldman3",
-						"$has|essences|4, oldman4", "$has|essences|5, oldman4", "$has|essences|6, oldman4", "$has|essences|7, oldman4", "$has|essences|8, oldman4",
-						"$has|essences|5, oldman5", "$has|essences|6, oldman5", "$has|essences|7, oldman5", "$has|essences|8, oldman5",
-						"$has|essences|6, oldman6", "$has|essences|7, oldman6", "$has|essences|8, oldman6",
-						"$has|essences|7, oldman7", "$has|essences|8, oldman7",
-						"$has|essences|8, oldman8"]
+						"essences:1, oldman1",
+						"essences:2, oldman2",
+						"essences:3, oldman3",
+						"essences:4, oldman4",
+						"essences:5, oldman5",
+						"essences:6, oldman6",
+						"essences:7, oldman7",
+						"essences:8, oldman8"]
 					}
 				],
 				"map_locations": [
@@ -877,7 +818,7 @@
 				]
 			},
 			{
-				"name": "Golden Octorok",
+				"name": "Golden Octorok - Summer",
 				"access_rules": ["$south_swamp, swamp_summer",
 					"$south_swamp, $swamp_stump, summer"],
 				"sections": [
@@ -938,7 +879,7 @@
 			{
 				"name": "Ingo's House",
 				"access_rules": ["$gale_tree",
-					"remains_portals_to_city"],
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Ingo Trade",
@@ -955,28 +896,28 @@
 			},
 			{
 				"name": "Syrup's House",
-				"access_rules": ["$gale_tree",
-					"remains_portals_to_city"],
+				"access_rules": ["$gale_tree, winter, bombs",
+					"$gale_tree, winter, flippers",
+					"$gale_tree, sunken_winter",
+					"$remains_portals_to_city, winter, bombs",
+					"$remains_portals_to_city, winter, flippers",
+					"$remains_portals_to_city, sunken_winter"],
 				"sections": [
 					{
 					"name": "Sunken City: Syrup Trade",
-					"access_rules": ["winter, flippers, mushroom",
-						"sunken_winter, mushroom"]
+					"access_rules": ["mushroom"]
 					},
 					{
 					"name": "Sunken City: Syrup Shop #1",
-					"access_rules": ["winter, flippers, $farm_rupees, mushroom",
-						"sunken_winter, $farm_rupees, mushroom"]
+					"access_rules": ["$farm_rupees, mushroom"]
 					},
 					{
 					"name": "Sunken City: Syrup Shop #2",
-					"access_rules": ["winter, flippers, $farm_rupees, mushroom",
-						"sunken_winter, $farm_rupees, mushroom"]
+					"access_rules": ["$farm_rupees, mushroom"]
 					},
 					{
 					"name": "Sunken City: Syrup Shop #3",
-					"access_rules": ["winter, flippers, $farm_rupees, mushroom",
-						"sunken_winter, $farm_rupees, mushroom"]
+					"access_rules": ["$farm_rupees, mushroom"]
 					}
 				],
 				"map_locations": [
@@ -990,7 +931,7 @@
 			{
 				"name": "Waterfall Challenge",
 				"access_rules": ["$gale_tree",
-					"remains_portals_to_city"],
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Master Diver's Challenge Chest",
@@ -1009,7 +950,7 @@
 			{
 				"name": "Waterfall",
 				"access_rules": ["$gale_tree",
-					"remains_portals_to_city"],
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Master's Plaque Trade",
@@ -1031,7 +972,7 @@
 			{
 				"name": "Sunken City Cliffs",
 				"access_rules": ["$gale_tree",
-				"remains_portals_to_city"],
+					"$remains_portals_to_city"],
 				"sections": [
 					{
 					"name": "Sunken City: Chest in Summer Cave",
@@ -1225,7 +1166,7 @@
 				]
 			},
 			{
-				"name": "Golden Lynel",
+				"name": "Golden Lynel - Winter",
 				"chest_unopened_img": "images/items/golden_lynel.png",
 				"chest_opened_img": "images/items/golden_lynel_defeated.png",
 				"access_rules": ["$tarm_lynel"],
@@ -1341,28 +1282,28 @@
 					{
 					"name": "Onox",
 					"access_rules": ["onox0",
-						"$has|essences|1, onox1", "$has|essences|2, onox1", "$has|essences|3, onox1", "$has|essences|4, onox1", "$has|essences|5, onox1", "$has|essences|6, onox1", "$has|essences|7, onox1", "$has|essences|8, onox1",
-						"$has|essences|2, onox2", "$has|essences|3, onox2", "$has|essences|4, onox2", "$has|essences|5, onox2", "$has|essences|6, onox2", "$has|essences|7, onox2", "$has|essences|8, onox2",
-						"$has|essences|3, onox3", "$has|essences|4, onox3", "$has|essences|5, onox3", "$has|essences|6, onox3", "$has|essences|7, onox3", "$has|essences|8, onox3",
-						"$has|essences|4, onox4", "$has|essences|5, onox4", "$has|essences|6, onox4", "$has|essences|7, onox4", "$has|essences|8, onox4",
-						"$has|essences|5, onox5", "$has|essences|6, onox5", "$has|essences|7, onox5", "$has|essences|8, onox5",
-						"$has|essences|6, onox6", "$has|essences|7, onox6", "$has|essences|8, onox6",
-						"$has|essences|7, onox7", "$has|essences|8, onox7",
-						"$has|essences|8, onox8"],
+						"essences:1, onox1",
+						"essences:2, onox2",
+						"essences:3, onox3",
+						"essences:4, onox4",
+						"essences:5, onox5",
+						"essences:6, onox6",
+						"essences:7, onox7",
+						"essences:8, onox8"],
 					"hosted_item": "onox"
 					},
 					{
 					"name": "Ganon",
 					"visibility_rules": ["ganon_goal"],
 					"access_rules": ["onox0",
-						"$has|essences|1, onox1", "$has|essences|2, onox1", "$has|essences|3, onox1", "$has|essences|4, onox1", "$has|essences|5, onox1", "$has|essences|6, onox1", "$has|essences|7, onox1", "$has|essences|8, onox1",
-						"$has|essences|2, onox2", "$has|essences|3, onox2", "$has|essences|4, onox2", "$has|essences|5, onox2", "$has|essences|6, onox2", "$has|essences|7, onox2", "$has|essences|8, onox2",
-						"$has|essences|3, onox3", "$has|essences|4, onox3", "$has|essences|5, onox3", "$has|essences|6, onox3", "$has|essences|7, onox3", "$has|essences|8, onox3",
-						"$has|essences|4, onox4", "$has|essences|5, onox4", "$has|essences|6, onox4", "$has|essences|7, onox4", "$has|essences|8, onox4",
-						"$has|essences|5, onox5", "$has|essences|6, onox5", "$has|essences|7, onox5", "$has|essences|8, onox5",
-						"$has|essences|6, onox6", "$has|essences|7, onox6", "$has|essences|8, onox6",
-						"$has|essences|7, onox7", "$has|essences|8, onox7",
-						"$has|essences|8, onox8"],
+						"essences:1, onox1",
+						"essences:2, onox2",
+						"essences:3, onox3",
+						"essences:4, onox4",
+						"essences:5, onox5",
+						"essences:6, onox6",
+						"essences:7, onox7",
+						"essences:8, onox8"],
 					"hosted_item": "ganon"
 					}
 					
@@ -1380,7 +1321,7 @@
 				"sections": [
 				  	{
 						"name": "Horon Village: Seed Tree",
-						"access_rules": ["$harvest_seeds",
+						"access_rules": ["{}", "$harvest_seeds",
 							"$harvest_seeds_dimitri"],
 						"hosted_item": "tree_village"
 				  	}
@@ -1401,7 +1342,7 @@
 				"sections": [
 				  	{
 						"name": "Holodrum Plain: Seed Tree",
-						"access_rules": ["$harvest_seeds",
+						"access_rules": ["{}", "$harvest_seeds",
 							"$harvest_seeds_dimitri"],
 						"hosted_item": "tree_plain"
 				  	}
@@ -1420,7 +1361,7 @@
 				"sections": [
 				  	{
 						"name": "Woods of Winter: Seed Tree",
-						"access_rules": ["$harvest_seeds", 
+						"access_rules": ["{}", "$harvest_seeds", 
 							"$harvest_seeds_dimitri"],
 						"hosted_item": "tree_wow"
 				  	}
@@ -1449,7 +1390,7 @@
 				"sections": [
 					{
 						"name": "Spool Swamp: Seed Tree",
-						"access_rules": ["$harvest_seeds",
+						"access_rules": ["{}", "$harvest_seeds",
 							"$harvest_seeds_dimitri"],
 						"hosted_item": "tree_swamp"
 					}
@@ -1469,7 +1410,7 @@
 				"sections": [
 				  {
 						"name": "Sunken City: Seed Tree",
-						"access_rules": ["$harvest_seeds_dimitri",
+						"access_rules": ["{}", "$harvest_seeds_dimitri",
 							"$harvest_seeds, bombs"],
 						"hosted_item": "tree_sunken"
 				  	}
@@ -1488,7 +1429,7 @@
 				"sections": [
 				  	{
 					"name": "Tarm Ruins: Seed Tree",
-					"access_rules": ["$harvest_seeds"],
+					"access_rules": ["{}", "$harvest_seeds"],
 					"hosted_item": "tree_tarm"
 				  	}
 				],
