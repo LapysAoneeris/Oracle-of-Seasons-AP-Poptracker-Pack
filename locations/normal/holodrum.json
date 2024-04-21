@@ -206,7 +206,6 @@
 				"sections": [
 					{
 					"name": "Maple trade",
-					"hosted_item": "maple_traded",
 					"access_rules": ["$farm_maple, lonlonegg"]
 					}
 				],
@@ -919,15 +918,15 @@
 					},
 					{
 					"name": "Sunken City: Syrup Shop #1",
-					"access_rules": ["$farm_rupees, maple_traded"]
+					"access_rules": ["$farm_rupees, mushroom"]
 					},
 					{
 					"name": "Sunken City: Syrup Shop #2",
-					"access_rules": ["$farm_rupees, maple_traded"]
+					"access_rules": ["$farm_rupees, mushroom"]
 					},
 					{
 					"name": "Sunken City: Syrup Shop #3",
-					"access_rules": ["$farm_rupees, maple_traded"]
+					"access_rules": ["$farm_rupees, mushroom"]
 					}
 				],
 				"map_locations": [

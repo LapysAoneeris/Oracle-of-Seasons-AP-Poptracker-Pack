@@ -879,11 +879,5 @@
     "type": "toggle",
     "img": "images/items/compass.png",
     "codes": "d8_compass"
-  },
-  {
-    "name": "Maple traded",
-    "type": "toggle",
-    "img": "images/items/maple.png",
-    "codes": "maple_traded"
   }
 ]
