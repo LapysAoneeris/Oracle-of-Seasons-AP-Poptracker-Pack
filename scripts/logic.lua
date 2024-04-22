@@ -287,15 +287,15 @@ function sword_kill_punch()
 end
 
 function gale_kill()
-	return has("casual") and
-		shoot_seeds_combat() and has("galeseeds") or
+	return (has("casual") and
+		shoot_seeds_combat() and has("galeseeds")) or
 	
-	has("medium") and
+	(has("medium") and
 		((shoot_seeds_combat() and has("galeseeds")) or
-		(has("satchel2") and has("feather") and has("galeseeds"))) or
+		(has("satchel2") and has("feather") and has("galeseeds")))) or
 
-	has("hard") and
-		has("satchel2") and has("galeseeds")
+	(has("hard") and
+		has("satchel2") and has("galeseeds"))
 end
 
 function kill_normal()
@@ -366,12 +366,12 @@ function kill_dodongo()
 end
 
 function kill_beetle()
-	return ((has("shield1") or has("shovel")) and (use_seeds_combat() and (has("emberseeds") or has("scentseeds"))) or
-		sword_kill_punch()) or
+	return ((has("shield1") or has("shovel")) and ((use_seeds_combat() and (has("emberseeds") or has("scentseeds"))) or
+		sword_kill_punch())) or
 		gale_kill() or
 	
-	(has("medium") or has("hard")) and
-		((has("shield1") or has("shovel")) and (use_seeds_combat() and contact_seeds()) or sword_kill_punch() or has("bombs30"))
+		((has("medium") or has("hard")) and
+			((has("shield1") or has("shovel")) and ((use_seeds_combat() and contact_seeds()) or sword_kill_punch() or has("bombs30"))))
 end
 
 function kill_moldorm()
@@ -957,14 +957,14 @@ function d0()
 	return has("shuffledungeonoff") and enter_d0() or
 	has("shuffledungeonon") and
 		(has("d0_d0") and enter_d0() or
-		has("d0_d1") and enter_d1() or
-		has("d0_d2") and enter_d2() or
-		has("d0_d3") and enter_d3() or
-		has("d0_d4") and enter_d4() or
-		has("d0_d5") and enter_d5() or
-		has("d0_d6") and enter_d6() or
-		has("d0_d7") and enter_d7() or
-		has("d0_d8") and enter_d8())
+		has("d1_d0") and enter_d1() or
+		has("d2_d0") and enter_d2() or
+		has("d3_d0") and enter_d3() or
+		has("d4_d0") and enter_d4() or
+		has("d5_d0") and enter_d5() or
+		has("d6_d0") and enter_d6() or
+		has("d7_d0") and enter_d7() or
+		has("d8_d0") and enter_d8())
 end
 
 function d1()
@@ -972,110 +972,110 @@ function d1()
 	has("shuffledungeonon") and
 		(has("d0_d1") and enter_d0() or
 		has("d1_d1") and enter_d1() or
-		has("d1_d2") and enter_d2() or
-		has("d1_d3") and enter_d3() or
-		has("d1_d4") and enter_d4() or
-		has("d1_d5") and enter_d5() or
-		has("d1_d6") and enter_d6() or
-		has("d1_d7") and enter_d7() or
-		has("d1_d8") and enter_d8())
+		has("d2_d1") and enter_d2() or
+		has("d3_d1") and enter_d3() or
+		has("d4_d1") and enter_d4() or
+		has("d5_d1") and enter_d5() or
+		has("d6_d1") and enter_d6() or
+		has("d7_d1") and enter_d7() or
+		has("d8_d1") and enter_d8())
 end
 
 function d2()
 	return has("shuffledungeonoff") and enter_d2() or
 	has("shuffledungeonon") and
 		(has("d0_d2") and enter_d0() or
-		has("d2_d1") and enter_d1() or
+		has("d1_d2") and enter_d1() or
 		has("d2_d2") and enter_d2() or
-		has("d2_d3") and enter_d3() or
-		has("d2_d4") and enter_d4() or
-		has("d2_d5") and enter_d5() or
-		has("d2_d6") and enter_d6() or
-		has("d2_d7") and enter_d7() or
-		has("d2_d8") and enter_d8())
+		has("d3_d2") and enter_d3() or
+		has("d4_d2") and enter_d4() or
+		has("d5_d2") and enter_d5() or
+		has("d6_d2") and enter_d6() or
+		has("d7_d2") and enter_d7() or
+		has("d8_d2") and enter_d8())
 end
 
 function d3()
 	return has("shuffledungeonoff") and enter_d3() or
 	has("shuffledungeonon") and
-		(has("d3_d0") and enter_d0() or
-		has("d3_d1") and enter_d1() or
-		has("d3_d2") and enter_d2() or
+		(has("d0_d3") and enter_d0() or
+		has("d1_d3") and enter_d1() or
+		has("d2_d3") and enter_d2() or
 		has("d3_d3") and enter_d3() or
-		has("d3_d4") and enter_d4() or
-		has("d3_d5") and enter_d5() or
-		has("d3_d6") and enter_d6() or
-		has("d3_d7") and enter_d7() or
-		has("d3_d8") and enter_d8())
+		has("d4_d3") and enter_d4() or
+		has("d5_d3") and enter_d5() or
+		has("d6_d3") and enter_d6() or
+		has("d7_d3") and enter_d7() or
+		has("d8_d3") and enter_d8())
 end
 
 function d4()
 	return has("shuffledungeonoff") and enter_d4() or
 	has("shuffledungeonon") and
-		(has("d4_d0") and enter_d0() or
-		has("d4_d1") and enter_d1() or
-		has("d4_d2") and enter_d2() or
-		has("d4_d3") and enter_d3() or
+		(has("d0_d4") and enter_d0() or
+		has("d1_d4") and enter_d1() or
+		has("d2_d4") and enter_d2() or
+		has("d3_d4") and enter_d3() or
 		has("d4_d4") and enter_d4() or
-		has("d4_d5") and enter_d5() or
-		has("d4_d6") and enter_d6() or
-		has("d4_d7") and enter_d7() or
-		has("d4_d8") and enter_d8())
+		has("d5_d4") and enter_d5() or
+		has("d6_d4") and enter_d6() or
+		has("d7_d4") and enter_d7() or
+		has("d8_d4") and enter_d8())
 end
 
 function d5()
 	return has("shuffledungeonoff") and enter_d5() or
 	has("shuffledungeonon") and
-		(has("d5_d0") and enter_d0() or
-		has("d5_d1") and enter_d1() or
-		has("d5_d2") and enter_d2() or
-		has("d5_d3") and enter_d3() or
-		has("d5_d4") and enter_d4() or
+		(has("d0_d5") and enter_d0() or
+		has("d1_d5") and enter_d1() or
+		has("d2_d5") and enter_d2() or
+		has("d3_d5") and enter_d3() or
+		has("d4_d5") and enter_d4() or
 		has("d5_d5") and enter_d5() or
-		has("d5_d6") and enter_d6() or
-		has("d5_d7") and enter_d7() or
-		has("d5_d8") and enter_d8())
+		has("d6_d5") and enter_d6() or
+		has("d7_d5") and enter_d7() or
+		has("d8_d5") and enter_d8())
 end
 
 function d6()
 	return has("shuffledungeonoff") and enter_d6() or
 	has("shuffledungeonon") and
-		(has("d6_d0") and enter_d0() or
-		has("d6_d1") and enter_d1() or
-		has("d6_d2") and enter_d2() or
-		has("d6_d3") and enter_d3() or
-		has("d6_d4") and enter_d4() or
-		has("d6_d5") and enter_d5() or
+		(has("d0_d6") and enter_d0() or
+		has("d1_d6") and enter_d1() or
+		has("d2_d6") and enter_d2() or
+		has("d3_d6") and enter_d3() or
+		has("d4_d6") and enter_d4() or
+		has("d5_d6") and enter_d5() or
 		has("d6_d6") and enter_d6() or
-		has("d6_d7") and enter_d7() or
-		has("d6_d8") and enter_d8())
+		has("d7_d6") and enter_d7() or
+		has("d8_d6") and enter_d8())
 end
 
 function d7()
 	return has("shuffledungeonoff") and enter_d7() or
 	has("shuffledungeonon") and
-		(has("d7_d0") and enter_d0() or
-		has("d7_d1") and enter_d1() or
-		has("d7_d2") and enter_d2() or
-		has("d7_d3") and enter_d3() or
-		has("d7_d4") and enter_d4() or
-		has("d7_d5") and enter_d5() or
-		has("d7_d6") and enter_d6() or
+		(has("d0_d7") and enter_d0() or
+		has("d1_d7") and enter_d1() or
+		has("d2_d7") and enter_d2() or
+		has("d3_d7") and enter_d3() or
+		has("d4_d7") and enter_d4() or
+		has("d5_d7") and enter_d5() or
+		has("d6_d7") and enter_d6() or
 		has("d7_d7") and enter_d7() or
-		has("d7_d8") and enter_d8())
+		has("d8_d7") and enter_d8())
 end
 
 function d8_dungeon()
 	return has("shuffledungeonoff") and enter_d8() or
 	has("shuffledungeonon") and
-		(has("d8_d0") and enter_d0() or
-		has("d8_d1") and enter_d1() or
-		has("d8_d2") and enter_d2() or
-		has("d8_d3") and enter_d3() or
-		has("d8_d4") and enter_d4() or
-		has("d8_d5") and enter_d5() or
-		has("d8_d6") and enter_d6() or
-		has("d8_d7") and enter_d7() or
+		(has("d0_d8") and enter_d0() or
+		has("d1_d8") and enter_d1() or
+		has("d2_d8") and enter_d2() or
+		has("d3_d8") and enter_d3() or
+		has("d4_d8") and enter_d4() or
+		has("d5_d8") and enter_d5() or
+		has("d6_d8") and enter_d6() or
+		has("d7_d8") and enter_d7() or
 		has("d8_d8") and enter_d8())
 end
 
