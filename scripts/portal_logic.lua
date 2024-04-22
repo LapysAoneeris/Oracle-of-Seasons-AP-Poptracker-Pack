@@ -50,11 +50,10 @@ end
 function portal_swamp_enter()
 	return has("bracelet") and 
 	(drained_swamp() or 
-	((destroy_bush_flute() and (has("bracelet") or (has("flippers") and destroy_bush_flute()) or dimitri()) or
-	use_seeds() and has("emberseeds") and cross_water_suburbs() and (has("spring") or has("suburbs_spring")) and cross_natzu() or
-	(d8_exit() or remains_exit()) and jump3()) and (max_jump() >= 1 or has("plain_winter") or ricky() or moosh()) or
-	destroy_bush_flute() and (has("flippers") or dimitri()) and destroy_bush_flute() or
-	(d8_exit() or remains_exit()) and jump3()) and (dimitri() or has("flippers")))
+		((dimitri() or has("flippers")) and 
+			(((has("swamp_winter") or has("winter")) and has("shovel")) or 
+			((has("swamp_spring") or has("spring")) and destroy_flower()) or 
+			(has("swamp_summer") or has("summer") or has("swamp_fall") or has("fall")))))
 end
 
 function portal_lake_enter()
